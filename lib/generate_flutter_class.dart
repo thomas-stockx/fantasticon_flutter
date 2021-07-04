@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:meta/meta.dart';
 import 'package:icon_font_generator/templates/flutter_icons.dart' as template;
 import 'package:recase/recase.dart';
 
@@ -23,7 +22,7 @@ Future<GenerateResult> generateFlutterClass({
     (entry) => someReplace(
       template.icon
           .replaceFirst('%ICON_NAME%', ReCase(entry.key).camelCase)
-          .replaceFirst('%ICON_CODE%', entry.value.replaceAll('\\', '')),
+          .replaceFirst('%ICON_CODE%', entry.value.toRadixString(16).toString()),
       className: className,
       indent: indent,
     ),
