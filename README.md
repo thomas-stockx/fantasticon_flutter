@@ -23,10 +23,9 @@ $ pub global activate icon_font_generator
 - `--out-flutter` * - Output flutter icon class (to file, for example: lib/icons.dart)
 - `--class-name` * - The class name is also the font name used in pubspec.yaml (as font name)
 - `--height` - Fixed font height value, defaults: 512
-- `--ascent` - Offset applied to the baseline, defaults: 240
+- `--descent` - Offset applied to the baseline, defaults: 240
 - `--package` - Name of package for generated icon data ([See more](https://api.flutter.dev/flutter/widgets/IconData/fontPackage.html))
 - `--indent` - Indent for generating dart file, for example: '   ', default: '  '
-- `--mono` - Make font monospace, default: true
 - `--normalize` - Normalize icons sizes, default: false
 
 ## Example
