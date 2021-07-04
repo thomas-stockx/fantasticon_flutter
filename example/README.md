@@ -15,7 +15,7 @@ project
 ```
 Run command:
 ```
-$ icon_font_generator --from=icons --class-name=UiIcons --out-font=lib/icon_font/ui_icons.ttf --out-flutter=lib/widgets/icons.dart
+$ fantasticon_flutter --from=icons --class-name=UiIcons --out-font=lib/icon_font/ui_icons.ttf --out-flutter=lib/widgets/icons.dart
 ```
 Generates:
 ```

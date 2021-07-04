@@ -13,11 +13,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  icon_font_generator:
+  fantasticon_flutter:
     path: ../
 
 scripts:
-  generate_icons: icon_font_generator 
+  generate_icons: fantasticon_flutter 
     --from=icons 
     --class-name=UiIcons 
     --out-font=lib/icon_font/ui_icons.ttf 

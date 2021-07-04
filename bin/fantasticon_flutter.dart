@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:args/command_runner.dart';
-import 'package:icon_font_generator/generate_flutter_class.dart';
-import 'package:icon_font_generator/templates/npm_package.dart';
-import 'package:icon_font_generator/utils.dart';
+import 'package:fantasticon_flutter/generate_flutter_class.dart';
+import 'package:fantasticon_flutter/templates/npm_package.dart';
+import 'package:fantasticon_flutter/utils.dart';
 import 'package:path/path.dart' as path;
 
 void main(List<String> args) async {
-  final runner = CommandRunner('icon_font_generator', 'Generate you own fonts')
+  final runner = CommandRunner('fantasticon_flutter', 'Generate you own fonts')
     ..addCommand(GenerateCommand());
   try {
     await runner.run(['gen', ...args]);

@@ -1,10 +1,10 @@
-## Flutter Icon Font Generator
+## `fantasticon_flutter` - Flutter Icon Font Generator
 
-![Pub](https://img.shields.io/pub/v/icon_font_generator)
+![Pub](https://img.shields.io/pub/v/fantasticon_flutter)
 
 Convert all *.svg icons from dir to icon-font (.ttf) and generates flutter compatible dart class. 
 
-Abstraction layer for NodeJs package `icon-font-generator`
+Abstraction layer for NodeJs package `fantasticon`.
 
 ## Requirements
 Node.JS v11+
@@ -12,7 +12,7 @@ Node.JS v11+
 ## Install:
 
 ```
-$ pub global activate icon_font_generator
+$ pub global activate fantasticon_flutter
 ```
 
 ## Params:
@@ -44,7 +44,7 @@ project
 ```
 Run command:
 ```
-$ icon_font_generator --from=icons --class-name=UiIcons --out-font=lib/icon_font/ui_icons.ttf --out-flutter=lib/widgets/icons.dart
+$ fantasticon_flutter --from=icons --class-name=UiIcons --out-font=lib/icon_font/ui_icons.ttf --out-flutter=lib/widgets/icons.dart
 ```
 Generates:
 ```

@@ -1,7 +1,7 @@
 const String npmPackageTemplate = '''
 {
-  "name": "icon_font_generator",
-  "repository": "https://github.com/rbcprolabs/icon_font_generator",
+  "name": "fantasticon_flutter",
+  "repository": "https://github.com/rbcprolabs/fantasticon_flutter",
   "private": true,
   "version": "1.0.0",
   "license": "MIT",
