@@ -27,6 +27,7 @@ $ pub global activate fantasticon_flutter
 - `--package` - Name of package for generated icon data ([See more](https://api.flutter.dev/flutter/widgets/IconData/fontPackage.html))
 - `--indent` - Indent for generating dart file, for example: '   ', default: '  '
 - `--normalize` - Normalize icons sizes, default: false
+- `--naming-strategy` - Icons name strategy: snake (yaru_icon) or camel (yaruIcon), default: snake
 
 ## Example
 File structure:

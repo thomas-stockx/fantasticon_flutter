@@ -60,6 +60,12 @@ class GenerateCommand extends Command {
         'normalize',
         help: 'Normalize icons sizes',
         defaultsTo: false,
+      )
+      ..addOption(
+        'naming-strategy',
+        help: 'Icons name strategy',
+        defaultsTo: 'snake',
+        allowed: {'camel', 'snake'},
       );
   }
 
@@ -121,7 +127,7 @@ class GenerateCommand extends Command {
 
     // icon-font-generator requires package: `ttf2woff2`
     // we do not need him and requires a python
-    final String gypErr = 'gyp ERR!';
+    final gypErr = 'gyp ERR!';
     await stderr.addStream(nodeInstallDependencies.stderr
         .where((bytes) => !utf8.decode(bytes).contains(gypErr)));
 
@@ -191,6 +197,7 @@ class GenerateCommand extends Command {
       iconMap: iconsMap,
       className: argResults!['class-name'],
       packageName: argResults!['package'],
+      namingStrategy: argResults!['naming-strategy'],
       indent: argResults!['indent'],
     );
 
