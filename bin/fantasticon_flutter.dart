@@ -103,7 +103,7 @@ class GenerateCommand extends Command {
         Directory.fromUri(genRootDir.uri.resolve('temp_icons'));
     final tempOutDirectory =
         Directory.fromUri(genRootDir.uri.resolve('temp_font'));
-    final iconsMap = File.fromUri(genRootDir.uri.resolve('temp_font/${path.basenameWithoutExtension(argResults!['out-font']),}.json'));
+    final iconsMap = File.fromUri(genRootDir.uri.resolve('temp_font/${path.basenameWithoutExtension(argResults!['out-font'])}.json'));
     if (tempSourceDirectory.existsSync()) {
       await tempSourceDirectory.delete(recursive: true);
     }
